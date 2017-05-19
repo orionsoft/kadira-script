@@ -5,6 +5,7 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org nano
 sudo cp /home/kadira/deploy/mongo.service /etc/systemd/system/mongodb.service
 
+export LC_ALL=C
 mongo admin --eval 'rs.initiate({_id: "rs0", members:[{_id : 0, host : "localhost:27017"}]})'
 mongo admin --eval 'rs.slaveOk()'
 
