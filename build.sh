@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "INSTALLING MONGO"
-sh /home/deploy/install-mongo.sh
+sh /home/deploy/script/install-mongo.sh
 echo "INSTALLING NODE"
-sh /home/deploy/install-node.sh
+sh /home/deploy/script/install-node.sh
 echo "INSTALLING METEOR"
-sh /home/deploy/install-meteor.sh
+sh /home/deploy/script/install-meteor.sh
