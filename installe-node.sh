@@ -1,7 +1,6 @@
 # Installing essencials
 sudo apt-get update
-sudo apt-get install nodejs-legacy
-sudo apt-get install npm
+sudo apt-get install nodejs-legacy npm -y
 sudo npm install -g pick-mongo-primary
 
 
