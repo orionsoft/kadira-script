@@ -6,7 +6,7 @@ sudo apt-get update
 sudo apt-get install mongodb-org nano -y
 sudo apt-get install -y mongodb
 sudo cp /home/deploy/script/mongodb.service /etc/systemd/system/mongodb.service
-
+mkdir /srv/mongodb/db0
 echo "#################### REGISTERING SERVICE ####################"
 sudo systemctl start mongodb
 sudo systemctl status mongodb
