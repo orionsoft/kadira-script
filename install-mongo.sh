@@ -5,7 +5,6 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org nano
 sudo cp /home/kadira/deploy/mongo.service /etc/systemd/system/mongodb.service
 
-
 sudo systemctl start mongodb
 sudo systemctl status mongodb
 sudo systemctl enable mongodb
