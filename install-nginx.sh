@@ -6,7 +6,7 @@ sudo ln -s /etc/nginx/sites-available/kadira /etc/nginx/sites-enabled/
 sudo nginx -t
 
 # Configuring kadira-engine endpoints
-sudo mv /home/kadira/deploy/kadira-engine /etc/nginx/sites-available/kadira-engine
+sudo mv /home/kadira/deploy/kadira-engine c/kadira-engine
 sudo ln -s /etc/nginx/sites-available/kadira-engine /etc/nginx/sites-enabled/
 sudo nginx -t
 

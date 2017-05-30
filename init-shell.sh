@@ -8,7 +8,7 @@ export MAIL_URL="smtp://postmaster%40kadira.io:9jx4fqhdfbg5@smtp.mailgun.org:587
 export ENGINE_PORT=11011
 
 # UI settings
-export UI_PORT=80
+export UI_PORT=4040
 export UI_URL="http://localhost:$UI_PORT"
 # CPU Profiler needs a s3 bucket
 export AWS_DEFAULT_REGION="eu-central-1"

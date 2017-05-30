@@ -1,0 +1,30 @@
+{
+  "language": "Kadira",
+  "envVars": [
+    {
+      "key": "APP_MONGO_URL",
+      "description": "Kadira external database, here is were you can save accounts and apps",
+      "defaultValue": ""
+    },
+    {
+      "key": "AWS_DEFAULT_REGION",
+      "defaultValue": "",
+      "description": "AWS S3 default region",
+    },
+    {
+      "key": "AWS_ACCESS_KEY_ID",
+      "description": "S3 access key id",
+      "defaultValue": ""
+    },
+    {
+      "key": "AWS_SECRET_ACCESS_KEY",
+      "description": "S3 secret access key",
+      "defaultValue": ""
+    },
+    {
+      "key": "AWS_BUCKET",
+      "description": "AWS S3 bucket",
+      "defaultValue": ""
+    }
+  ]
+}
