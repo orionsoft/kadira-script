@@ -7,6 +7,7 @@ sudo apt-get install -y mongodb  > /dev/null 2>&1 &
 sudo cp /home/deploy/script/mongodb.service /etc/systemd/system/mongodb.service
 mkdir /srv/mongodb
 mkdir /srv/mongodb/db0
+sudo chown -R mongodb /srv/mongodb/db0
 echo "#################### CHECKING CLUSTER FOLDER CREATION ####################"
 ls /srv/mongodb
 echo "#################### REGISTERING SERVICE ####################"
