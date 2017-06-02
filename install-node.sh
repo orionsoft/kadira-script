@@ -1,7 +1,7 @@
 # Installing essencials
-sudo apt-get update > /dev/null
-sudo apt-get install nodejs-legacy npm -y > /dev/null
-sudo npm install -g pick-mongo-primary > /dev/null
+sudo apt-get update
+sudo apt-get install nodejs-legacy npm -y
+sudo npm install -g pick-mongo-primary
 
 
 # Adding Kadira User and project

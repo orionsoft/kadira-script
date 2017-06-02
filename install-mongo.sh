@@ -1,9 +1,8 @@
 # Installing Mongo DBp
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
-echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list -y > /dev/null 2>&1 &
-sudo apt-get update > /dev/null
-sudo apt-get install mongodb-org nano -y  > /dev/null 2>&1 &
-sudo apt-get install -y mongodb  > /dev/null 2>&1 &
+echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list -y
+sudo apt-get update
+sudo apt-get install mongodb-org mongodb nano -y > /dev/null
 sudo cp /home/deploy/script/mongodb.service /etc/systemd/system/mongodb.service
 mkdir /srv/mongodb
 mkdir /srv/mongodb/db0
