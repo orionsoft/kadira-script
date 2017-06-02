@@ -4,14 +4,16 @@ echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" 
 sudo apt-get -qq update
 sudo apt-get -qq install mongodb nano -y
 sudo rm /etc/systemd/system/mongodb.service
+ls /etc/systemd/system
 sudo cp /home/deploy/script/mongodb.service /etc/systemd/system/mongodb.service
+ls /etc/systemd/system
 mkdir /srv/mongodb
 mkdir /srv/mongodb/db0
 sudo chown -R mongodb /srv/mongodb/db0
 echo "#################### CHECKING CLUSTER FOLDER CREATION ####################"
 ls /srv/mongodb
 echo "#################### REGISTERING SERVICE ####################"
-systemctl daemon-reload
+sudo systemctl daemon-reload
 sudo systemctl start mongodb.service
 sudo systemctl status mongodb.service
 sudo systemctl enable mongodb.service
