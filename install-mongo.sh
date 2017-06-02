@@ -1,5 +1,4 @@
 # Installing Mongo DB
-echo "#################### INSTALLING MONGO ####################"
 sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv EA312927
 echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list -y > /dev/null 2>&1 &
 sudo apt-get update > /dev/null
@@ -9,7 +8,7 @@ sudo cp /home/deploy/script/mongodb.service /etc/systemd/system/mongodb.service
 mkdir /srv/mongodb
 echo "#################### CHECKING FOLDER CREATION ####################"
 ls /srv
-mkdir /srv/mongodbF≤/db0
+mkdir /srv/mongodb/db0
 echo "#################### REGISTERING SERVICE ####################"
 sudo systemctl start mongodb
 sudo systemctl status mongodb
