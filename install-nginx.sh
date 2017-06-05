@@ -1,5 +1,5 @@
 sudo apt-get install -o Dpkg::Use-Pty=0 nginx -y
-sudo rm -rf /etc/nginx/sites-enabled/default
+sudo rm /etc/nginx/sites-enabled/default
 # Configuring kadira endpoints
 sudo mv /home/deploy/script/kadira /etc/nginx/sites-available/kadira
 sudo ln -s /etc/nginx/sites-available/kadira /etc/nginx/sites-enabled/

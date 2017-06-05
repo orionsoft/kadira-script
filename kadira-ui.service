@@ -3,8 +3,8 @@ Description=kadira-ui
 [Service]
 Type=simple
 User=kadira
-WorkingDirectory=/home/kadira
-ExecStart=/bin/bash -c "source kadira-server/init-shell.sh; cd kadira-server/kadira-ui; ./run.sh"
+WorkingDirectory=/home/deploy/app
+ExecStart=/bin/bash -c "source init-shell.sh; cd kadira-ui; ./run.sh"
 Restart=on-abort
 [Install]
 WantedBy=multi-user.target
