@@ -25,6 +25,5 @@ sudo systemctl status mongodb.service
 # db.createUser({ user: "kadira", pwd: "kadira", roles: [ "readWrite", "dbAdmin" ]})
 echo "#################### CHECKING MONGO INSTALLATION ####################"
 export LC_ALL=C
-sudo service mongod restart
-mongo --eval 'printjson(rs.initiate({_id: "rs0", members:[{_id : 0, host : "127.0.0.1:27017"}]}))'
-mongo --eval 'rs.slaveOk()'
+sudo mongo --eval 'printjson(rs.initiate({_id: "rs0", members:[{_id : 0, host : "127.0.0.1:27017"}]}))'
+sudo mongo --eval 'rs.slaveOk()'
