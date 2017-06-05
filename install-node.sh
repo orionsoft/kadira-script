@@ -1,6 +1,10 @@
 # Installing essencials
-sudo apt-get update
-sudo apt-get install nodejs-legacy npm -y
+sudo apt-get update -o Dpkg::Use-Pty=0
+sudo apt-get install nodejs-legacy npm -y -o Dpkg::Use-Pty=0
+echo "#################### CHECKING NODE Y NPM ####################"
+node -v
+npm -v
+echo "#################### INSTALLING GLOBAL PACKAGES ####################"
 sudo npm install -g pick-mongo-primary
 
 
