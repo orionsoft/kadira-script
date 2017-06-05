@@ -8,4 +8,4 @@ sh /home/deploy/script/install-meteor.sh
 echo "#################### INSTALLING NGINX ####################"
 sh /home/deploy/script/install-nginx.sh
 echo "#################### INSTALLING KADIRA-UI ####################"
-sh /home/deploy/script/install-kadira-ui.sh
+# sh /home/deploy/script/install-kadira-ui.sh
