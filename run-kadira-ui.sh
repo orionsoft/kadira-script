@@ -1,6 +1,7 @@
 # Starting service
 sudo su ubuntu
 cd /home/deploy/app
+ls
 source init-shell.sh
 cd kadira-ui
 
