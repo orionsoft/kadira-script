@@ -16,6 +16,7 @@ sudo systemctl start mongodb.service
 sudo systemctl enable mongodb.service
 sudo systemctl status mongodb.service
 echo "#################### CHECKING MONGO INSTALLATION ####################"
+sleep 5
 export LC_ALL=C
 sudo mongo --eval 'printjson(rs.initiate({_id: "rs0", members:[{_id : 0, host : "127.0.0.1:27017"}]}))'
 sudo mongo --eval 'printjson(rs.slaveOk())'
