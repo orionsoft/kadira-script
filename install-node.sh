@@ -1,6 +1,6 @@
 # Installing essencials
-sudo apt-get update -o Dpkg::Use-Pty=0
-sudo apt-get install nodejs-legacy npm -y -o Dpkg::Use-Pty=0
+sudo apt-get -o Dpkg::Use-Pty=0 update
+sudo apt-get -o Dpkg::Use-Pty=0 install nodejs-legacy npm -y -o Dpkg::Use-Pty=0
 echo "#################### CHECKING NODE Y NPM ####################"
 node -v
 npm -v
