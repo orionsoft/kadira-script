@@ -14,7 +14,7 @@ echo "#################### CHECKING CLUSTER FOLDER CREATION ####################
 ls /srv/mongodb
 echo "#################### REGISTERING SERVICE ####################"
 sudo systemctl daemon-reload
-sudo systemctl start mongodb.service
+sudo systemctl restart mongodb.service
 sudo systemctl status mongodb.service
 sudo systemctl enable mongodb.service
 
